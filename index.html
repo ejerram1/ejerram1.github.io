@@ -7,14 +7,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1> Test </h1>
-    <button id="myButton">Click me</button>
-    <p id="myText" class="container" style="display: none;">Hello, world!</p>
+    <h1> Ethan Jerram </h1>
+    <div class="nav">
+        <button id="about">About Me</button>
+        <button id="projects">Projects</button>
+        <button id="contact">Contact</button>
+    </div>
+    <div id="section1">This is section 1</div>
+    <div id="section2" style="display: none;">
+        <h2>Projects</h2>
+        <ul>
+            <li id="audiosidechannel">Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ul>
+    </div>
+    <div id="section3" style="display: none;">This is section 3</div>
 
-    <script>
-        document.getElementById("myButton").addEventListener("click", function() {
-            document.getElementById("myText").style.display = "block";
-        });
-    </script>
+    <script src="https://unpkg.com/marked/marked.min.js"></script>
+    <script src="switch.js"></script>
+    <script src="repos.js"></script>
 </body>
 </html>
